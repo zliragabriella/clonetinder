@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  font-family: "Roboto";
+  background: #f5f7fa;
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  height: 45px;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar i {
+  font-size: 1.5rem;
+  color: #dadfe6;
+}
+
+.navbar i:nth-child(1) {
+  font-size: 1.5rem;
+  color: #f26a6c;
+}
+
+.photo-actions {
+  height: cal(100vh - 45px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gradient {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 101, 91, 0) 0%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-end;
+}
+.photo {
+  width: 30vw;
+  height: 80vh;
+  background: url("https://www.lahiguera.net/musicalia/artistas/jorja_smith/fotos/10015/jorja_smith.jpg");
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.photo-text {
+  width: 100%;
+  color: white;
+  padding: 16px;
+}
+.nome-age {
+  display: flex;
+  gap: 10px;
+}
+
+.actions {
+  display: flex;
+  padding: 10px 0;
+  width: 40%;
+  gap: 10px;
+  justify-content: center;
+}
+
+.action {
+  display: flex;
+  justify-content: center;
+  background: white;
+  padding: 14px;
+  font-size: 26px;
+  border-radius: 50%;
+}
+
+.action:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.cancel-icon {
+  color: #ff1010;
+}
+
+.star-icon {
+  color: #00fa9a;
+}
+
+.heart-icon {
+  color: #40e0d0;
+}
+
+@media screen and (max-width: 900px) {
+  .photo {
+    width: 90vw;
+    height: 85vh;
+  }
+}
